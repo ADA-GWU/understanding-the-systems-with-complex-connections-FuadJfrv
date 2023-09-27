@@ -12,22 +12,22 @@ public class Client
 
     public static void main(String[]args) throws IOException
     {
-        Socket socket = new Socket("localhost", 9001);
-        Socket socket2 = new Socket("localhost", 9002);
-        
-        sockets.add(socket);
-        sockets.add(socket2);
+        sockets.add(new Socket("localhost", 9001));
+        sockets.add(new Socket("localhost", 9002));
+        sockets.add(new Socket("localhost", 9003));
 
         BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Enter a number: ");
-        float num = Float.parseFloat(inputReader.readLine());
+        while (true)
+        {
+            System.out.println("Enter a number: ");
 
-        Integer socketInd = ThreadLocalRandom.current().nextInt(0, sockets.size());
+            float num = Float.parseFloat(inputReader.readLine());
 
-        CallServer(socketInd, num);
+            Integer socketIndex = ThreadLocalRandom.current().nextInt(0, sockets.size());
 
-        socket.close();
+            CallServer(socketIndex, num);
+        }
     }
 
     private static void CallServer(Integer socketIndex, Float numberToDouble) throws IOException
@@ -35,8 +35,6 @@ public class Client
         PrintWriter socketWriter = new PrintWriter(sockets.get(socketIndex).getOutputStream(), true);
 
         socketWriter.println(numberToDouble);
-
-        socketWriter.close();
     }
 
 }
