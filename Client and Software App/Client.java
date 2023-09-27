@@ -32,14 +32,10 @@ public class Client
 
     private static void CallServer(Integer socketIndex, Float numberToDouble) throws IOException
     {
-        BufferedReader socketReader = new BufferedReader(new InputStreamReader(sockets.get(socketIndex).getInputStream()));
         PrintWriter socketWriter = new PrintWriter(sockets.get(socketIndex).getOutputStream(), true);
 
         socketWriter.println(numberToDouble);
 
-        //System.out.println(socketReader.readLine());
-
-        socketReader.close();
         socketWriter.close();
     }
 

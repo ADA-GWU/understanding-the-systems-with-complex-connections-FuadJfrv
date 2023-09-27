@@ -22,7 +22,6 @@ public class Server implements Serializable
 
 
         BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        PrintWriter socketWriter = new PrintWriter(socket.getOutputStream(), true);
 
 
         float num = Float.parseFloat(socketReader.readLine());
@@ -33,6 +32,5 @@ public class Server implements Serializable
         serverSocket.close();
         socket.close();
         socketReader.close();
-        socketWriter.close();
     }
 }
