@@ -1,20 +1,20 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server
+
+public class Server implements Serializable
 {
     static int port = 9000;
+
     public static void main(String[] args) throws IOException
     {
-        System.out.println("Enter a 9001, 9002: ");
+        /*System.out.println("Enter a 9001, 9002: ");
         BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in));
-        port = Integer.parseInt(inputReader.readLine());
+        port = Integer.parseInt(inputReader.readLine()); */
 
-        ServerSocket serverSocket = new ServerSocket(port);
+        System.out.println(port);
+        ServerSocket serverSocket = new ServerSocket(9001);
 
         System.out.println("Waiting for client ");
         Socket socket = serverSocket.accept();
@@ -26,7 +26,7 @@ public class Server
 
 
         float num = Float.parseFloat(socketReader.readLine());
-        socketWriter.println("Server says: " + num * 2);
+        System.out.println(num + " doubled is: " + num * 2);
 
 
         //Close IO
