@@ -17,15 +17,13 @@ public class Server implements Serializable
         BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
         while (true) {
-            if (socketReader.readLine().equalsIgnoreCase("exit")) break;
-
             float num = Float.parseFloat(socketReader.readLine());
             System.out.println(num + " doubled is: " + num * 2);
         }
 
         //Close IO
-        serverSocket.close();
-        socket.close();
-        socketReader.close();
+        //serverSocket.close();
+        //socket.close();
+        //socketReader.close();
     }
 }

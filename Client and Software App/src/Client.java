@@ -22,21 +22,12 @@ public class Client
         {
             System.out.println("Enter a number: ");
 
-            if (inputReader.readLine().equalsIgnoreCase("exit"))  break;
-
             float num = Float.parseFloat(inputReader.readLine());
 
             Integer socketIndex = ThreadLocalRandom.current().nextInt(0, sockets.size());
 
             CallServer(socketIndex, num);
         }
-
-        for (var socket : sockets) {
-            PrintWriter socketWriter = new PrintWriter(socket.getOutputStream(), true);
-            socketWriter.println("exit");
-            socket.close();
-        }
-        inputReader.close();
     }
 
     private static void CallServer(Integer socketIndex, Float numberToDouble) throws IOException
