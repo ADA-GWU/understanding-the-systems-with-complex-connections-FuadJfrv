@@ -1,15 +1,16 @@
 Prerequisite:
-Install JRE if you haven't already 
 
-If you want to check if you have it installed or not, open command line (or terminal) and type "java -version" (without the quotes), the version installed should be 1.8 or higher.
-
-If nothing shows up you can install it from one of the links below (installion takes a couple of seconds)
-
-For the newest version (160mb download):
-https://adoptium.net/ (click on latest LTS Release)
-
-For an older version that should still work (80mb download)
-https://www.java.com/en/download/manual.jsp
+    Install JRE if you haven't already 
+    
+    If you want to check if you have it installed or not, open command line (or terminal) and type "java -version" (without the quotes), the version installed should be 1.8 or higher.
+    
+    If nothing shows up you can install it from one of the links below (installion takes a couple of seconds)
+    
+    For the newest version (160mb download):
+    https://adoptium.net/ (click on latest LTS Release)
+    
+    For an older version that should still work (80mb download)
+    https://www.java.com/en/download/manual.jsp
 
 
 Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
