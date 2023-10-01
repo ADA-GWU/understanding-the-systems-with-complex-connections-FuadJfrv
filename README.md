@@ -34,8 +34,7 @@ Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down):
     You may exit by simply closing the client terminal window, and all the server terminals will close automatically. 
     
 
-Running the app if you are on MAC/LINUX:
-
+Running the app if you are on MAC/LINUX
     Step 0:
     Install the project files(ZIP) from github.
 
