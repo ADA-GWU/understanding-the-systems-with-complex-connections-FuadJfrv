@@ -35,6 +35,7 @@ Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down):
     
 
 Running the app if you are on MAC/LINUX:
+
     Step 0:
     Install the project files(ZIP) from github.
 
