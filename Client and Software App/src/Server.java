@@ -20,10 +20,5 @@ public class Server implements Serializable
             float num = Float.parseFloat(socketReader.readLine());
             System.out.println(num + " doubled is: " + num * 2);
         }
-
-        //Close IO
-        //serverSocket.close();
-        //socket.close();
-        //socketReader.close();
     }
 }
