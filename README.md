@@ -2,6 +2,7 @@ Prerequisite:
 Install JRE if you haven't already (installion takes a couple of seconds)
 https://www.java.com/en/download/manual.jsp
 
+If you want to verify whether you have it installed or not, open command line (or terminal) and type "java -version" (without the quotes), the version installed should be 1.8 or higher
 
 Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
 
@@ -23,10 +24,10 @@ Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
 
     Step 5:
     Run Client.bat
-    Important: You need to run ALL server instances (step 3) before running the client, otherwisee the client terminal will CRASH
+    Important: You need to run ALL server instances (step 4) before running the client, otherwisee the client terminal will CRASH
 
     Step 6:
-    After doing Step 3 and 4, you should see the message "Client Connected" on all server terminals and the message "Enter a number:" on client terminal.
+    After doing Step 4 and 5, you should see the message "Client Connected" on all server terminals and the message "Enter a number:" on client terminal.
 
     You may enter any number, and one of the randomly picked servers will display that number doubled. 
     IMPORTANT: If you enter a non-number(string) the application will CRASH
@@ -46,7 +47,7 @@ Running the app if you are on MAC/LINUX
     Step 3:
     Go To: "Client and Software App" >> "Executables"
     You should see the following files: Server.jar; Client.jar;
-    (You can ignore the other files however do NOT delete them)
+    (You can ignore the other files)
 
     Step 4:
     
