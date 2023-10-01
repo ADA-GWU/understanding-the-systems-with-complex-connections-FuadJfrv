@@ -1,8 +1,14 @@
 Prerequisite:
-Install JRE if you haven't already (installion takes a couple of seconds)
+Install JRE if you haven't already 
+
+If you want to check if you have it installed or not, open command line (or terminal) and type "java -version" (without the quotes), the version installed should be 1.8 or higher
+If nothing shows up you can install it from one of the links below (installion takes a couple of seconds)
+
+For the newest version (160mb download):
+https://adoptium.net/ (click on latest LTS Release)
+For an older version that should still work (80mb download)
 https://www.java.com/en/download/manual.jsp
 
-If you want to verify whether you have it installed or not, open command line (or terminal) and type "java -version" (without the quotes), the version installed should be 1.8 or higher
 
 Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
 
@@ -50,4 +56,12 @@ Running the app if you are on MAC/LINUX
     (You can ignore the other files)
 
     Step 4:
+    Copy the file path to the executables folder
+
+    Step 5:
+    Open the terminal, change the directory to the executables folder (with "cd" command)
+    
+    Step 6:
+    type in "java -jar server.jar 9001"
+    This should create
     
