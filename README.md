@@ -59,7 +59,7 @@ Running the app if you are on MAC/LINUX
     (You can ignore the other files)
 
     Step 4:
-    Copy the file path to the executables folder
+    Copy the file path to the "Executables" folder
 
     Step 5:
     Open a new terminal window, change the directory to the executables folder (with "cd" command)
