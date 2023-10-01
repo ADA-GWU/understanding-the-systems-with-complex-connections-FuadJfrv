@@ -4,6 +4,7 @@ https://www.java.com/en/download/manual.jsp
 
 
 Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
+
     Step 1:
     Install the project files(ZIP) from github.
 
@@ -35,6 +36,7 @@ Running the app if you are on WINDOWS (If you are on MAC/LINUX scroll down)
     
 
 Running the app if you are on MAC/LINUX
+
     Step 1:
     Install the project files(ZIP) from github.
 
@@ -47,4 +49,4 @@ Running the app if you are on MAC/LINUX
     (You can ignore the other files however do NOT delete them)
 
     Step 4:
-
+    
